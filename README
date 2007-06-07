@@ -1,0 +1,127 @@
+pod2text Digest::Auth.pm > README
+--------------------------------
+Digest::Auth - Digest Based Authentication using DBI.
+--------------------------------
+TOC:
+--------------------------------
+
+1.	DESCRIPTION
+2.	DOCUMENTATION
+3.	INSTALATION
+4.	CHANGES
+5.	MOTIVATION
+6.	CONTACT
+7.	LICENSE
+
+--------------------------------
+1. DESCRIPTION:
+--------------------------------
+
+This module attempts to provide a means for easily building a reasonably 
+secure perl application using one way secure hash algorythms. This should 
+not be a replacement for other security precautions such as SSL, SSH, etc. 
+but instead an additional layer of protection to prevent common types of 
+attacks which many perl applications are susceptable to.
+
+This library idealy works in conjuction with client side hash algorythms to 
+provide a much more secure method of athenticating users although you can 
+opt to not use an client side hashing for the sake of compatibility.
+
+This module is licensed under the GPL.  
+See the LICENSE section below for more details.
+
+--------------------------------
+2. DOCUMENTATION:
+--------------------------------
+
+The documentation is in Auth.pm in the form of POD format 
+perldocs.  Even the above text might be out of date, so be sure to
+check the perldocs for the straight truth!
+
+--------------------------------
+3. INSTALLATION:
+--------------------------------
+
+In case this is your first module, the usual methods are:
+
+        perl Makefile.PL
+        make
+        make test
+        make install
+        
+If you are on a windows box you should use 'nmake' rather than 'make'. 
+You can get nmake from Microsoft.com (as of this writing: http://support.microsoft.com/kb/132084) 
+Just copy it into the install path of Perl ("C:\Perl\bin" directory) 
+and run it, then you can use the commands:    
+
+        perl Makefile.PL
+        nmake
+        nmake test
+        nmake install
+
+If you plan to use the shared memory cache you might want to test it
+before you install.  Make sure you have an up-to-date copy of
+IPC::SharedCache installed (available from the same place you got
+Digest::Auth, either CPAN or SourceForge) and then do:
+
+       TEST_SHARED_MEMORY=1 make test
+       
+Or use a memory sandbox like sandboxie if your on windows.
+       
+--------------------------------
+4. CHANGES:
+--------------------------------
+
+2007.06.06: 0.01_01
+
+	First Alpha release.
+
+--------------------------------
+5. MOTIVATION:
+--------------------------------
+
+Session based user access is key to nearly every internet and intranet 
+application. While there have been a few attempts to make a secure hash 
+login library they have had several short comings such as poor documentation, 
+support, weak algoryms (such as MD5), a poor design, etc. This library 
+seeks to fill an important gap to help make perl applications more secure. 
+
+
+--------------------------------
+6. CONTACT: 
+--------------------------------
+
+David P Smith
+dsmith@avitar.net
+http://avitar.net
+
+--------------------------------
+7. LICENSE: 
+--------------------------------
+
+Digest::Auth : Digest Based Authentication using DBI.
+Copyright (C) 2007 David P Smith (dsmith@avitar.net)
+
+This module is free software; you can redistribute it and/or modify it
+under the terms of either:
+
+a) the GNU General Public License as published by the Free Software
+Foundation; either version 1, or (at your option) any later version,
+or
+
+b) the "Artistic License" which comes with this module.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See either
+the GNU General Public License or the Artistic License for more details.
+
+You should have received a copy of the Artistic License with this
+module, in the file ARTISTIC.  If not, I'll be glad to provide one.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+USA
+
+--------------------------------
