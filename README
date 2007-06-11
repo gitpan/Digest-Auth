@@ -71,9 +71,10 @@ Or use a memory sandbox like sandboxie if your on windows.
 --------------------------------
 4. CHANGES:
 --------------------------------
+2007.06.11: 0.01_2
+	Added META.yml to build
 
-2007.06.06: 0.01_01
-
+2007.06.06: 0.01_1
 	First Alpha release.
 
 --------------------------------

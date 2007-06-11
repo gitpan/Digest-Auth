@@ -1,5 +1,8 @@
 Revision history for Perl module Digest::Auth
 
+0.01_2 Wed Jun  11 12:35:06 2007
+	Added META.yml to build
+
 0.01_1 Wed Jun  6 12:35:06 2007
     - original version; created by ExtUtils::ModuleMaker 0.49
 

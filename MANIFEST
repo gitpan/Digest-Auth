@@ -6,3 +6,4 @@ Changes
 Makefile.PL
 lib/Digest/Auth.pm
 t/001_load.t
+META.yml                                 Module meta-data (added by MakeMaker)

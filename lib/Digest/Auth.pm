@@ -8,7 +8,7 @@ use strict;	  # Enforce restictions on good programming
 
 # --- Headers --- 
 my $PACKAGE = 'Auth';
-my $VERSION = '0.01_1';
+my $VERSION = '0.01_2';
 use vars qw($VERSION);
 
 # Routines
